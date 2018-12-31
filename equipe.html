@@ -1,0 +1,378 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!doctype html>
+<html>
+<head>
+	<title>Skyline | Equipe </title>
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/style_2.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<!--web-font-->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+	<!--//web-font-->
+	<!-- Custom Theme files -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Furnishing Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<!-- //Custom Theme files -->
+	<!-- js -->
+	<script src="js/jquery.min.js"></script>
+	<!-- //js -->
+	<!-- start-smoth-scrolling-->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
+	<script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+	</script>
+	<script type="text/javascript">
+        jQuery(document).ready(function($) {
+
+            $('#myCarousel').carousel({
+                interval: 5000
+            });
+
+            //Handles the carousel thumbnails
+            $('[id^=carousel-selector-]').click(function () {
+                var id_selector = $(this).attr("id");
+                try {
+                    var id = /-(\d+)$/.exec(id_selector)[1];
+                    console.log(id_selector, id);
+                    jQuery('#myCarousel').carousel(parseInt(id));
+                } catch (e) {
+                    console.log('Regex failed!', e);
+                }
+            });
+            // When the carousel slides, auto update the text
+            $('#myCarousel').on('slid.bs.carousel', function (e) {
+                var id = $('.item.active').data('slide-number');
+                $('#carousel-text').html($('#slide-content-'+id).html());
+            });
+        });
+	</script>
+	<script type="text/css">
+		.hide-bullets {
+			list-style:none;
+			margin-left: -40px;
+			margin-top:20px;
+		}
+
+		.thumbnail {
+			padding: 0;
+		}
+
+		.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+			width: 100%;
+		}
+	</script>
+</head>
+<body>
+<!--header-->
+
+<div class="banner" style="background:url(images/architecte.jpg)">
+	<div class="header-main">
+
+		<div class="container">
+			<div class="col-md-9 top-nav">
+				<span class="menu"><img src="images/menu.png" alt=""/></span>
+				<ul class="nav1" style="display: none">
+					<li><a href="index.html" class="active">Accueil</a></li>
+                        <li><a href="gallery.html">Projets</a></li>
+                        <li><a href="equipe.html">Equipe</a></li>
+                        <li><a href="portfilio.html">PORTFOLIO</a></li>
+                        <li><a href="contact.html" >Contact</a></li>
+				</ul>
+				<!-- script-for-menu -->
+				<script>
+                    $( "span.menu" ).click(function() {
+                        $( "ul.nav1" ).slideToggle( 300, function() {
+                            // Animation complete.
+                        });
+                    });
+				</script>
+				<!-- /script-for-menu -->
+			</div>
+			<div class="col-md-3 header-logo">
+				<a href="index.html"><img src="images/logo-1.png" width="100px" height="100px" alt="logo"/></a>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+
+<!--//header-->
+<!--portfolio-->
+<div class="container">
+<div class="services">
+	<h3>Equipe</h3>
+</div>
+	<br><br>
+
+	<div class="schedule-bottom">
+		<div class="col-md-6 agileinfo_schedule_bottom_left">
+			<img src="images/schedule.jpg" alt=" " class="img-responsive"/>
+		</div>
+		<div class="col-md-6 agileits_schedule_bottom_right" style="margin-top: -55px; height:337px; ">
+			<div class="w3ls_schedule_bottom_right_grid">
+				<h3>Interesting <span>Facts</span></h3>
+				<p>Suspendisse varius turpis efficitur erat laoreet dapibus.
+					Mauris sollicitudin scelerisque commodo.Nunc dapibus mauris sed metus finibus posuere.</p>
+				<div class="col-md-4 w3l_schedule_bottom_right_grid1">
+					<i class="fa fa-shield" aria-hidden="true"></i>
+					<h4>Projects Done</h4>
+					<h5 class="counter">653</h5>
+				</div>
+				<div class="col-md-4 w3l_schedule_bottom_right_grid1">
+					<i class="fa fa-users" aria-hidden="true"></i>
+					<h4>Happy Clients</h4>
+					<h5 class="counter">823</h5>
+				</div>
+				<div class="col-md-4 w3l_schedule_bottom_right_grid1">
+					<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+					<h4>Business partners</h4>
+					<h5 class="counter">45</h5>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- //banner-bottom -->
+<!-- team -->
+<div class="container">
+	<div class="row">
+		<div class="heading-title text-center">
+			<h3 class="text-uppercase">Our professionals </h3>
+			<p class="p-top-30 half-txt">Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. </p>
+		</div>
+
+		<div class="col-md-4 col-sm-4">
+			<div class="team-member">
+				<div class="team-img">
+					<img src="C:\Users\Ahmed\Desktop\exmple_test_template_final\exmple_test_template_final\exmple_test_template\web\images\7.jpg" alt="team member" class="img-responsive">
+				</div>
+				<div class="team-hover">
+					<div class="desk">
+						<h4>Hi There !</h4>
+						<p>I love to introduce myself as a hardcore Web Designer.</p>
+					</div>
+					<div class="s-link">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="team-title">
+				<h5>Martin Smith</h5>
+				<span>founder &amp; ceo</span>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-4">
+			<div class="team-member">
+				<div class="team-img">
+					<img src="C:\Users\Ahmed\Desktop\exmple_test_template_final\exmple_test_template_final\exmple_test_template\web\images\6.jpg" alt="team member" class="img-responsive">
+				</div>
+				<div class="team-hover">
+					<div class="desk">
+						<h4>Hello World</h4>
+						<p>I love to introduce myself as a hardcore Web Designer.</p>
+					</div>
+					<div class="s-link">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="team-title">
+				<h5>Franklin Harbet</h5>
+				<span>HR Manager</span>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-4">
+			<div class="team-member">
+				<div class="team-img">
+					<img src="C:\Users\Ahmed\Desktop\exmple_test_template_final\exmple_test_template_final\exmple_test_template\web\images\8.jpg" alt="team member" class="img-responsive">
+				</div>
+				<div class="team-hover">
+					<div class="desk">
+						<h4>I love to design</h4>
+						<p>I love to introduce myself as a hardcore Web Designer.</p>
+					</div>
+					<div class="s-link">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="team-title">
+				<h5>Linda Anderson</h5>
+				<span>Marketing Manager</span>
+			</div>
+		</div>
+
+	</div>
+
+</div><!--portfolio-->
+<!--swipebox -->
+<link rel="stylesheet" href="css/swipebox.css">
+<script src="js/jquery.swipebox.min.js"></script>
+<script type="text/javascript">
+    jQuery(function($) {
+        $(".swipebox").swipebox();
+    });
+</script>
+<!--//swipebox Ends -->
+<!--footer-->
+<div class="w3_agile_footer">
+<div class="container">
+        <p>© Copyright SkyLine 2018- Tous droits réservés | By <a href="http://AllSolutionTunisie.tn">ALL Solution.</a></p>
+
+
+
+	<div class="arrow-container animated fadeInDown">
+		<a href="#home" class="arrow-2 scroll">
+			<i class="fa fa-angle-up"></i>
+		</a>
+		<div class="arrow-1 animated hinge infinite zoomIn"></div>
+	</div>
+</div>
+</div>
+<!--smooth-scrolling-of-move-up-->
+<script type="text/javascript">
+    $(document).ready(function() {
+        /*
+         var defaults = {
+         containerID: 'toTop', // fading element id
+         containerHoverID: 'toTopHover', // fading element hover id
+         scrollSpeed: 1200,
+         easingType: 'linear'
+         };
+         */
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
+<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!--//smooth-scrolling-of-move-up-->
+<!-- //footer -->
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!--banner form script-->
+<script type='text/javascript'>//<![CDATA[
+$(window).load(function () {
+    $("#slider-range").slider({
+        range: true,
+        min: 0,
+        max: 9000,
+        values: [1000, 7000],
+        slide: function (event, ui) {
+            $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+        }
+    });
+    $("#amount").val("$" + $("#slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
+
+});//]]>
+
+</script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<!--//banner form script-->
+<script src="js/responsiveslides.min.js"></script>
+<script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+        // Slideshow 4
+        $("#slider4").responsiveSlides({
+            auto: true,
+            pager: true,
+            nav: false,
+            speed: 500,
+            namespace: "callbacks",
+            before: function () {
+                $('.events').append("<li>before event fired.</li>");
+            },
+            after: function () {
+                $('.events').append("<li>after event fired.</li>");
+            }
+        });
+
+    });
+</script>
+<!--Rersponsive tabs-->
+<script src="js/easy-responsive-tabs.js"></script>
+
+<!-- //Rersponsive tabs -->
+<!-- flexSlider -->
+<script defer src="js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+    $(window).load(function () {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            start: function (slider) {
+                $('body').removeClass('loading');
+            }
+        });
+    });
+</script>
+
+<!-- //flexSlider -->
+<!-- for bootstrap working -->
+<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- start-smooth-scrolling -->
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+        });
+    });
+</script>
+<!-- start-smooth-scrolling -->
+<!-- password-script -->
+<script type="text/javascript">
+    window.onload = function () {
+        document.getElementById("password1").onchange = validatePassword;
+        document.getElementById("password2").onchange = validatePassword;
+    }
+    function validatePassword() {
+        var pass2 = document.getElementById("password2").value;
+        var pass1 = document.getElementById("password1").value;
+        if (pass1 != pass2)
+            document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+        else
+            document.getElementById("password2").setCustomValidity('');
+        //empty string means no validation error
+    }
+
+</script>
+<!-- //password-script -->
+
+<!-- stats -->
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.countup.js"></script>
+<script>
+    $('.counter').countUp();
+</script>
+<!-- //stats -->
+</body>
+</html>
